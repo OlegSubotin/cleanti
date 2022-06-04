@@ -1617,6 +1617,7 @@ a {
         height: 60px;
         padding: 10px;
         border: none;
+        outline: none;
     }
 
     .hero-form-input::placeholder {
@@ -1854,7 +1855,7 @@ a {
         align-items: center;
         position: absolute;
         top: -25px;
-        left: 50px;
+        left: 60px;
     }
 
     .jobs-square-left-text {
@@ -1920,8 +1921,8 @@ a {
 
     .jobs-square-ellipse-wrapper {
         position: absolute;
-        bottom: 70px;
-        left: calc(47%);
+        bottom: 16px;
+        left: 46%;
         background-color: rgba(42, 59, 76, 0.5);
         border-radius: 10px 0px 10px 10px;
         padding: 0 5px;
