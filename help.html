@@ -32,24 +32,28 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     
-    <header class="header">    
+    <header class="header">
+    
         <div class="container">
             <div class="header-wrapper">
-                <nav class="header-navigation ">    
+                <nav class="header-navigation ">
+    
                     <a class="header-logo" href="index.html" lang="en">
                         <picture>
                             <source srcset="images/logo.png" media="(min-width:1200px)" width=176 height=54 />
                             <source srcset="images/logo.png" media="(min-width:768px)" width=120 />
                             <source srcset="images/logo.png" media="(min-width:320px)" width=90 />
                             <img src="images/logo.png" alt="company-logo" width=176 height=54>
-                        </picture>    
-                    </a>    
+                        </picture>
+    
+                    </a>
+    
                     <ul class="navigation hidden">
                         <li class="nav-item">
                             <a class="nav-link " href="price.html">Cennik</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">O nas</a>
+                            <a class="nav-link " href="about.html">O nas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link current" href="help.html">Pomoc</a>
@@ -57,8 +61,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Kontakt</a>
                         </li>
-                    </ul>    
-                    <div class="socials-wrapper hidden">
+                    </ul>
+
+                    <a class="header-call-link" href="tel:+48730376243">+48 730 376 243</a>
+    
+                    <!-- <div class="socials-wrapper hidden">
                         <ul class="header-socials header-list">
                             <li class="header-socials-item">
                                 <a href="https://www.instagram.com/cleanti.clean/" class="header-socials-link">
@@ -89,19 +96,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                </nav>    
+                    </div> -->
+                </nav>
+    
                 <button id="burger-open" class="open-menu">
                     <svg class="header-burger-icon" width=22 height=22>
                         <use href="images/sprite.svg#icon-burger"></use>
                     </svg>
-                </button>    
+                </button>
+    
                 <div class="mob-menu is-hidden" id="data-menu">
                     <button class="menu-close btn" id="close-btn" data-menu-close>
                         <svg class="" width="19" height="19">
                             <use href="images/sprite.svg#icon-header-close"></use>
                         </svg>
-                    </button>    
+                    </button>
+    
                     <div class="mob-wrapper">
                         <div class="mob-call-link-wrapper">
                             <a id="mob-btn" class="mob-link call-link" href="tel:+48512871463">
@@ -110,19 +120,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     style="font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 16px; "
                                     class="visually-hidden">+48 512 871 463</span>
                             </a>
-                        </div>    
+                        </div>
+    
                         <ul class="mob-nav">
                             <li class="mob-nav-item">
                                 <a class="mob-nav-link " href="price.html">Cennik</a>
                             </li>
                             <li class="mob-nav-item">
-                                <a class="mob-nav-link " href="about.html">O nas</a>
+                                <a class="mob-nav-link current" href="about.html">O nas</a>
                             </li>
                             <li class="mob-nav-item">
-                                <a class="mob-nav-link current" href="help.html">Pomoc</a>
+                                <a class="mob-nav-link" href="help.html">Pomoc</a>
                             </li>
                             <li class="mob-nav-item">
-                                <a class="mob-nav-link " href="contact.html">Kontakt</a>
+                                <a class="mob-nav-link" href="contact.html">Kontakt</a>
                             </li>
                         </ul>
                         <div class="mob-socials-wrapper">
@@ -159,13 +170,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </svg>
                                     </a>
                                 </li>
-                            </ul>    
+                            </ul>
+    
                         </div>
                     </div>
-                    </div>    
-            </div>    
-        </div>    
     
+    
+    
+    
+    
+    
+                </div>
+    
+    
+            </div>
+    
+        </div>
+        
     </header>
 
     <main>
@@ -381,17 +402,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- BUY -->
         <section class="section buy-section">
             <div class="container">
-                <div class="buy-section-up">
+                <h2 class="buy-title">Zarezerwuj dogodny termin </h2>  
+                <div class="buy-form-wrapper">
+                     <form class="buy-form">
+                        <input
+                        required
+                    class="buy-form-input"
+                    type="text"
+                    
+                    placeholder="Imię i Nazwisko "
+                />
+                        <input
+                        required
+                    class="buy-form-input"
+                    type="tel"
+                    
+                    placeholder="Telefon "
+                />
+                        <input
+                        required
+                    class="buy-form-input"
+                    type="email"
+                    
+                    placeholder="E-mail "
+                />
+                <button class="buy-form-button">
+                    Zamów kontakt
+                </button>
+                    </form>
+                </div> 
+                <!-- <div class="buy-section-up">
                     <div class="buy-call-wrapper">
                         <div class="buy-link-wrapper">
                             <a id="buy-btn" class="buy-link call-link" href="tel:+48512871463">
                                 <span id="buy-call">Zadzwoń</span>
-                                <span id="buy-num"
-                                    style="font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 16px; "
+                                <span id="buy-num" style="font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 16px; "
                                     class="visually-hidden">+48 512 871 463</span>
                             </a>
-        
-        
+
+                            
                         </div>
                     </div>
         
@@ -419,7 +468,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -443,13 +492,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<address class="footer-contact">
 									<ul class="contact-list">
 											<li class="contact-item">
-													<a class="footer-link" href="tel:+48512871463"> 
-															<svg class="footer-item-icon" width=25 height=25>
-																	<use href="images/sprite.svg#icon-phone"></use>
-															</svg>
-															<span style="font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 16px; ">
-																	+48 512 871 463</span> 
-													</a>
+													<a class="footer-link" href="tel:+48730376243">
+                                    <svg class="footer-item-icon" width=25 height=25>
+                                        <use href="images/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    <span
+                                    
+                                        style="font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 16px; ">
+                                        +48 730 376 243</span>
+                                </a>
 											</li>
 											<li class="contact-item">
 													<a class="footer-link" href="https://goo.gl/maps/Cdyw82d8ifL5yxh37"> 
@@ -491,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											<a class="footer-nav-link" href="price.html">Cennik</a>
 									</li>
 									<li class="footer-nav-item">
-											<a class="footer-nav-link" href="help.html">Często zadawane pytania</a>
+											<a class="footer-nav-link current" href="help.html">Często zadawane pytania</a>
 									</li>
 									<li class="footer-nav-item">
 											<a class="footer-nav-link" href="#">Polityka prywatności</a>
@@ -569,7 +620,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script src="js/mob-menu.js" type="module"></script>
     <script src="js/mob-call.js" type="module"></script>
-    <script src="js/buy-call.js" type="module"></script>
+    <!-- <script src="js/buy-call.js" type="module"></script> -->
     <script src="js/help.js" type="module"></script>
 </body>
 </html>
