@@ -1641,6 +1641,12 @@ a {
         font-size: 18px;
         line-height: 21px;
         color: var(--extra-text-color);
+        cursor: pointer;
+    }
+
+    .hero-form-button:hover,
+    .hero-form-button:focus {
+        background-color: var(--accent-color);
     }
 
     .visually-hidden {
@@ -2205,6 +2211,12 @@ a {
         font-size: 18px;
         line-height: 21px;
         color: var(--extra-text-color);
+        cursor: pointer;
+    }
+
+    .buy-form-button:hover,
+    .buy-form-button:focus {
+        background-color: var(--accent-color);
     }
 
     /* .buy-section-up {
