@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="styles/index.css">
     <title>Pranie w Warszawie | Cleanti</title>
     
@@ -58,9 +59,10 @@
                     </li>
                 </ul>
 
-                <a class="header-call-link" href="tel:+48730376243">+48 730 376 243</a>
-                <!-- <div class="socials-wrapper hidden">
-                <ul class="header-socials header-list">
+                 <div class="socials-wrapper hidden">
+                    <a class="header-call-link" href="tel:+48730376243">+48 730 376 243</a>
+                
+                <!--<ul class="header-socials header-list">
                 <li class="header-socials-item">
                     <a href="https://www.instagram.com/cleanti.clean/" class="header-socials-link">
                         <svg class="header-socials-icon" width="25px" height="25px">
@@ -89,8 +91,8 @@
                         </svg>
                     </a>
                 </li>
-                </ul>
-                </div> -->
+                </ul>-->
+                </div> 
             </nav>
             <button id="burger-open" class="open-menu"> 
                 <svg class="header-burger-icon" width=26 height=26>
@@ -104,14 +106,14 @@
                     </svg>
                 </button>
                 <div class="mob-wrapper">
-                <div class="mob-call-link-wrapper">
+                <!-- <div class="mob-call-link-wrapper">
                 <a  id="mob-btn" class="mob-link call-link" href="tel:+48512871463">
                     <span id="mob-call">Zadzwoń</span>
                     <span id="mob-num"
                         style="font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 16px; "
                         class="visually-hidden">+48 512 871 463</span>
                 </a>
-                </div>
+                </div> -->
                 <ul class="mob-nav">
                     <li class="mob-nav-item">
                         <a class="mob-nav-link " href="price.html">Cennik</a>
@@ -126,7 +128,10 @@
                         <a class="mob-nav-link" href="contact.html">Kontakt</a>
                     </li>
                 </ul>
-                <div class="mob-socials-wrapper">
+
+                <a class="header-mob-call-link" href="tel:+48730376243">+48 730 376 243</a>
+                
+                <!-- <div class="mob-socials-wrapper">
                 <ul class="mob-socials ">
                     <li class="mob-socials-item">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cleanti.clean/" class="mob-socials-link">
@@ -157,7 +162,7 @@
                         </a>
                     </li>
                 </ul>
-                </div>
+                </div> -->
                 </div>        
              </div>            
             </div>
@@ -198,22 +203,19 @@
                 </button>
                     </form>
                 </div>              
-                <!-- <div class="call-link-wrapper">
-                <a id="hero-btn" class="hero-link call-link" href="tel:+48512871463">
-                   <span id="hero-call">Zadzwoń</span> 
-                   <span id="hero-num" style="font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 16px; " class="visually-hidden">+48 512 871 463</span>
-                </a>
-                </div> -->
+                
             </div>
         </section>
 
         <!-- FEATURES -->
         <section class="section features-section">
             <div class="container">
+                <div class="features-title-wrapper">
+                    <h2 class="title-section">Clean<span class="title-part">ti</span>  krok po kroku</h2>
+                 </div>
                 <div class="features-wrapper">
-                    <div class="features-title-wrapper">
-                        <h2 class="title-section">Clean<span class="title-part">ti</span>  krok po kroku</h2>
-                     </div>
+                    
+                    <div class="features-desktop-wrapper">
                 <ul class="features">
                     <li class="features-item">
                         <div class="icon-moderation">
@@ -248,6 +250,51 @@
                         <p class="features-text">Ciesz się wolnym czasem i czystością z Clean<span class="title-part">ti</span>.</p>
                     </li>
                 </ul>
+                    </div>
+
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="icon-moderation">
+                        <svg class="features-icon" width=70 height=45>
+                            <use href="images/sprite.svg#icon-burger"></use>
+                        </svg>
+                    </div>
+                    <p class="features-text">Zadzwoń lub napisz i otrzymaj darmową wycenę.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="icon-moderation">
+                        <svg class="features-icon" width=65 height=55>
+                            <use href="images/sprite.svg#icon-house"></use>
+                        </svg>
+                    </div>                        
+                    <p class="features-text">Wybierz dzień, godzinę i adres prania.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="icon-moderation">
+                        <svg class="features-icon" width=46 height=50>
+                            <use href="images/sprite.svg#icon-contact"></use>
+                        </svg>
+                    </div>
+                    <p class="features-text">Podaj swoję dane kontaktowe.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="icon-moderation">
+                        <svg class="features-icon" width=58 height=58>
+                            <use href="./images/sprite.svg#icon-check"></use>
+                        </svg>
+                    </div>
+                    <p class="features-text">Ciesz się wolnym czasem i czystością z Clean<span class="title-part">ti</span>.</p>
+                  </div>
+                  
+                </div>              
+            
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
                 </div>
             </div>
         </section>
@@ -367,11 +414,13 @@
         <!-- LINE -->
 
         <section class="section line-section">
-            <!-- <div class="container"> -->
+            
                 <div class="line-wrapper">
-                    <a behavior="alternate" class="line-link" href="tel:+48730376243">+48 730 376 243</a>
+                    <a behavior="alternate" class="line-link" href="tel:+48730376243">
+                        <span class="line-running-string"> +48 730 376 243 </span>      
+                    </a>
                 </div>
-            <!-- </div> -->
+            
         </section>
 
         
@@ -380,7 +429,8 @@
         <section class="section trust-section">
             <div class="container">
                 <h2 class="title-section ">Dlaczego Clean<span class="title-part">ti</span>?</h2>
-                <ul class="trust-list">
+                <div class="trust-wrapper">
+                    <ul class="trust-list">
                     <li class="trust-item">
                         <picture>
                             <source srcset="images/home-blank/trust/prof.jpg" media="(min-width:1200px)" width=250 height=200 />
@@ -418,7 +468,56 @@
                             <p class="trust-description-text">Szybka i elastyczna obsługa zapełnia bezpieczeństwo oraz dostosowania do potrzeb każdego klienta.</p>
                         </div>
                     </li>                    
-                </ul>
+                    </ul>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">        
+                          <div class="swiper-slide">
+                            <picture>
+                                <source srcset="images/home-blank/trust/prof.jpg" media="(min-width:1200px)" width=250 height=200 />
+                                <source srcset="images/home-blank/trust/prof.jpg" media="(min-width:768px)" width=220 />
+                                <source srcset="images/home-blank/trust/prof.jpg" media="(min-width:320px)" width=250 height=200  />
+                                <img class="trust-image" src="images/home-blank/trust/prof.jpg" alt="aggregate" width=250 height=200 />
+                            </picture>
+                            <div class="trust-description">
+                                <h3 class="trust-description-title">Profesjonalizm</h3>
+                                <p class="trust-description-text">Wykształcony personel oraz profesjonalny sprzęt.</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <picture>
+                                <source srcset="images/home-blank/trust/quality.jpg" media="(min-width:1200px)" width=250 height=200 />
+                                <source srcset="images/home-blank/trust/quality.jpg" media="(min-width:768px)" width=220 />
+                                <source srcset="images/home-blank/trust/quality.jpg" media="(min-width:320px)" width=250 height=200 />
+                                <img class="trust-image" src="images/home-blank/trust/quality.jpg" alt="vacuum-cleaner" width=250 height=200 />
+                            </picture>
+                            
+                            <div class="trust-description">
+                                <h3 class="trust-description-title">Jakość</h3>
+                                <p class="trust-description-text">Wykorzystujemy najwyższej jakości środki czystości.</p>
+                            </div>
+                          </div>
+                         
+                          <div class="swiper-slide">
+                            <picture>
+                                <source srcset="images/home-blank/trust/customer.jpg" media="(min-width:1200px)" width=250 height=200 />
+                                <source srcset="images/home-blank/trust/customer.jpg" media="(min-width:768px)" width=220 />
+                                <source srcset="images/home-blank/trust/customer.jpg" media="(min-width:320px)" width=250 height=200 />
+                                <img class="trust-image" src="images/home-blank/trust/customer.jpg" alt="woman in a call-center" width=250 height=200 />
+                            </picture>                        
+                            <div class="trust-description">
+                                <h3 class="trust-description-title">Skuteczna obsługa klienta</h3>
+                                <p class="trust-description-text">Szybka i elastyczna obsługa zapełnia bezpieczeństwo oraz dostosowania do potrzeb każdego klienta.</p>
+                            </div>
+                          </div>
+                          
+                        </div>                        
+                      
+            
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -427,7 +526,7 @@
             <div class="container">
                 
                     <h2 class="reviews-title">Opinie klientów</h2>                    
-                
+                <div class="reviews-wrapper">
                 <div class="reviews-positioning-wrapper">
                 <div class="reviews-slider">
                     <div class="reviews-slider-line js-reviews-slider-line">
@@ -500,15 +599,73 @@
                             <use href="images/sprite.svg#icon-reviews-arrow"></use>
                         </svg>
                 </button>
+                </div> 
+                
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">        
+                      <div class="swiper-slide">
+                        <img class="reviews-card-slider-image"  src="images/home-blank/reviews/card-1.jpg" alt="reviewer photo" width="100" height="100">
+                            <div class="reviews-card-slider-description">
+                            <p class="reviews-card-slider-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                            <span class="reviews-card-slider-extra-text"> <span class="reviews-card-slider-accent-text">Imie Nazwisko   </span> 01.06.2022</span>
+                            </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="reviews-card-slider-image"  src="images/home-blank/reviews/card-1.jpg" alt="reviewer photo" width="100" height="100">
+                            <div class="reviews-card-slider-description">
+                            <p class="reviews-card-slider-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                            <span class="reviews-card-slider-extra-text"> <span class="reviews-card-slider-accent-text">Imie Nazwisko   </span> 01.06.2022</span>
+                            </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="reviews-card-slider-image"  src="images/home-blank/reviews/card-1.jpg" alt="reviewer photo" width="100" height="100">
+                            <div class="reviews-card-slider-description">
+                            <p class="reviews-card-slider-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                            <span class="reviews-card-slider-extra-text"> <span class="reviews-card-slider-accent-text">Imie Nazwisko   </span> 01.06.2022</span>
+                            </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="reviews-card-slider-image"  src="images/home-blank/reviews/card-1.jpg" alt="reviewer photo" width="100" height="100">
+                            <div class="reviews-card-slider-description">
+                            <p class="reviews-card-slider-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                            <span class="reviews-card-slider-extra-text"> <span class="reviews-card-slider-accent-text">Imie Nazwisko   </span> 01.06.2022</span>
+                            </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="reviews-card-slider-image"  src="images/home-blank/reviews/card-1.jpg" alt="reviewer photo" width="100" height="100">
+                            <div class="reviews-card-slider-description">
+                            <p class="reviews-card-slider-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                            <span class="reviews-card-slider-extra-text"> <span class="reviews-card-slider-accent-text">Imie Nazwisko   </span> 01.06.2022</span>
+                            </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="reviews-card-slider-image"  src="images/home-blank/reviews/card-1.jpg" alt="reviewer photo" width="100" height="100">
+                            <div class="reviews-card-slider-description">
+                            <p class="reviews-card-slider-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                            <span class="reviews-card-slider-extra-text"> <span class="reviews-card-slider-accent-text">Imie Nazwisko   </span> 01.06.2022</span>
+                            </div>
+                      </div>
+                     
+                      
+                      
+                    </div>                        
+                  
+        
+                    <div class="swiper-scrollbar"></div>
                 </div>
-                
-                
+            </div>              
                 
             </div>
         </section>
 
         <!-- BUY -->
-        <section class="section buy-section">
+        <!-- <section class="section buy-section">
             <div class="container">   
                 <h2 class="buy-title">Zarezerwuj dogodny termin </h2>  
                 <div class="buy-form-wrapper">
@@ -539,47 +696,12 @@
                 </button>
                     </form>
                 </div>              
-
-                <!-- <div class="buy-section-up">
-                    <div class="buy-call-wrapper">
-                    <div class="buy-link-wrapper">     
-                    <a id="buy-btn" class="buy-link " href="tel:+48512871463">
-                        <span id="buy-call">Zadzwoń</span>
-                        <span id="buy-num" style="font-family: 'Roboto'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 16px; "
-                            class="visually-hidden">+48 512 871 463</span>
-                    </a>
-                    </div>
-                    </div>
-                <div class="buy-text-content">
-                    <h2 class="buy-section-title">Zamów nasze usługi</h2>
-                    <ul class="buy-list">
-                        <li class="buy-item">
-                            <svg class="buy-item-icon" width=28 height=28>
-                                <use href="images/sprite.svg#icon-check-circle"></use>
-                            </svg>
-                            <p class="buy-item-description">Jakość i bezpieczeństwo</p>
-                        </li>
-                        <li class="buy-item">
-                            <svg class="buy-item-icon" width=28 height=28>
-                                <use href="images/sprite.svg#icon-check-circle"></use>
-                            </svg>
-                            <p class="buy-item-description">Doświadczony personel</p>
-                        </li>
-                        <li class="buy-item">
-                            <svg class="buy-item-icon" width=28 height=28>
-                                <use href="images/sprite.svg#icon-check-circle"></use>
-                            </svg>
-                            <p class="buy-item-description">Profesjonalna obsługa każdego klienta</p>
-                        </li>                        
-                    </ul>
-                </div>
-                </div> -->
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container container-footer">            
                 <div class="footer-top-section">                 
                 <a class="footer-logo" href="index.html" >
@@ -713,10 +835,14 @@
             </div>
             </div>            
         </div>
-    </footer>
+    </footer> -->
     
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/home-features-slider.js" type="module"></script>
+    <script src="js/home-trust-slider.js" type="module"></script>
+    <script src="js/home-mob-reviews-slider.js" type="module"></script>
     <script src="js/mob-menu.js" type="module"></script>
-    <script src="js/mob-call.js" type="module"></script>
+    <!-- <script src="js/mob-call.js" type="module"></script> -->
     <!-- <script src="js/hero-call.js" type="module"></script> -->
     <!-- <script src="js/buy-call.js" type="module"></script>     -->
     <script src="js/home-jobs-slider.js" type="module"></script>
