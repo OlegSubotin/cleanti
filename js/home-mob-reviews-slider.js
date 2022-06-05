@@ -2,8 +2,16 @@ var swiper = new Swiper(".reviews-wrapper .mySwiper", {
     slidesPerView: 1,
     spaceBetween: 15,
     freeMode: true,
-    scrollbar: {
-        el: ".reviews-wrapper .swiper-scrollbar",
-        hide: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 15
       },
+      // when window width is >= 480px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+    }
   });
